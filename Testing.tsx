@@ -9,7 +9,7 @@ import {
 import React, {useEffect} from 'react';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-const RNTL = ({age, onPress}: {age: number; onPress?: () => void}) => {
+const Testing = ({age, onPress}: {age: number; onPress?: () => void}) => {
   useEffect(() => {
     return () => {
       console.log('Age:', age);
@@ -98,4 +98,4 @@ const RNTL = ({age, onPress}: {age: number; onPress?: () => void}) => {
   );
 };
 
-export default RNTL;
+export default Testing;

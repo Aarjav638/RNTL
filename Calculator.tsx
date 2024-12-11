@@ -4,7 +4,7 @@ import NativeCalculator from './specs/NativeCalculator';
 import {View, Text, TextInput, Button, StyleSheet, Alert} from 'react-native';
 
 const Calculator = () => {
-  const [result, setResult] = React.useState(0);
+  const [result,     setResult] = React.useState(0);
   const [expression, setExpression] = React.useState('');
 
   const calculate = () => {
