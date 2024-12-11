@@ -9,16 +9,23 @@
     "start": "react-native start",
     "test": "jest"
   },
-  "jest":{
+  "codegenConfig": {
+    "name": "NativeCalculatorSpec",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.nativecalculator"
+    }
+  },
+  "jest": {
     "preset": "react-native",
     "clearMocks": true,
-
-  "collectCoverage": true,
-
-  "coverageDirectory": "coverage",
-
-  "coverageProvider": "babel",
-  "setupFilesAfterEnv": ["./jest-setup.ts"]
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageProvider": "babel",
+    "setupFilesAfterEnv": [
+      "./jest-setup.ts"
+    ]
   },
   "dependencies": {
     "react": "18.3.1",

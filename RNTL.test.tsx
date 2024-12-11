@@ -6,7 +6,7 @@ import {
   userEvent,
   waitFor,
 } from '@testing-library/react-native';
-import App from './App';
+import RNTL from './RNTL';
 
 const mockFuntion = jest.fn();
 
@@ -27,7 +27,7 @@ describe('App Component', () => {
       advanceTimers: () => jest.advanceTimersByTime(10000),
     });
 
-    render(<App age={20} />);
+    render(<RNTL age={20} />);
 
     let ageElement = screen.getByTestId('age');
     expect(ageElement).toHaveTextContent('Age: 20');
@@ -38,7 +38,7 @@ describe('App Component', () => {
     //   ageElement = screen.getByTestId('age');
     //   expect(ageElement).toHaveTextContent('Age: 60');
     // });
-    screen.update(<App age={60} onPress={mockFuntion} />);
+    screen.update(<RNTL age={60} onPress={mockFuntion} />);
     expect(ageElement).toHaveTextContent('Age: 60');
     expect(screen.getByText('App')).toBeTruthy();
     expect(screen.getByLabelText('CheckText')).toBeTruthy();
