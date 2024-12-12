@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NativeCalculator from './specs/NativeCalculator';
+import NativeCalculator from '../specs/NativeCalculator';
 import {View, Text, TextInput, Button, StyleSheet, Alert} from 'react-native';
 
 const Calculator = () => {

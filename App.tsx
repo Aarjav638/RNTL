@@ -1,10 +1,10 @@
 import {Button, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-import Testing from './Testing';
-import Calculator from './Calculator';
+import Testing from './components/Testing';
+import Calculator from './components/Calculator';
 import { FlashList } from '@shopify/flash-list';
-import ReactFastImage from './FastImage';
+import ReactFastImage from './components/FastImage';
 
 const Components = [
   {
